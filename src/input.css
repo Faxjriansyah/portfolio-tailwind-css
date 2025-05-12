@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: oklch(0.855 0.138 181.071);
+  --color-dark: oklch(0.208 0.042 265.755);
+}
+
+/* Custom styling untuk container */
+.container {
+  width: 100%;
+  max-width: 1320px; /* Sesuai dengan ukuran 2xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Custom breakpoints */
+@media (max-width: 1320px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+#about {
+  background-image: url("../dist/img/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Bisa pakai 'contain' jika SVG tidak perlu menutupi seluruh area */
+  background-position: center;
+}
